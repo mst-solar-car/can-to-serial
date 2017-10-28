@@ -1,0 +1,310 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:can-serial-2017-cache
+LIBS:solarcar-kicad-components
+LIBS:C2S-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATmega32U4-RESCUE-can-serial-2017 U2
+U 1 1 59EA96C0
+P 5800 3600
+F 0 "U2" H 4900 5300 50  0000 C CNN
+F 1 "ATmega32U4" H 5100 2100 50  0000 C CNN
+F 2 "" H 7000 4700 50  0000 C CNN
+F 3 "" H 7000 4700 50  0000 C CNN
+	1    5800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR024
+U 1 1 59EA9898
+P 4500 5000
+F 0 "#PWR024" H 4500 4750 50  0001 C CNN
+F 1 "GND" H 4500 4850 50  0000 C CNN
+F 2 "" H 4500 5000 50  0001 C CNN
+F 3 "" H 4500 5000 50  0001 C CNN
+	1    4500 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4650 4500 5000
+Wire Wire Line
+	4500 4950 4550 4950
+Wire Wire Line
+	4500 4850 4550 4850
+Connection ~ 4500 4950
+Wire Wire Line
+	4500 4750 4550 4750
+Connection ~ 4500 4850
+Wire Wire Line
+	3650 4650 4550 4650
+Connection ~ 4500 4750
+Wire Wire Line
+	4450 2150 4550 2150
+Wire Wire Line
+	4500 2150 4500 2550
+Wire Wire Line
+	4500 2250 4550 2250
+Connection ~ 4500 2150
+Wire Wire Line
+	4500 2350 4550 2350
+Connection ~ 4500 2250
+Wire Wire Line
+	4500 2550 4550 2550
+Connection ~ 4500 2350
+NoConn ~ 4550 3450
+NoConn ~ 4550 2450
+Text Notes 4900 3300 0    60   ~ 0
+Serial Interfce Clock
+Text Notes 5150 3400 0    60   ~ 0
+Serial Interface Data
+Text Notes 5500 3500 0    60   ~ 0
+Recieve Data
+Text Notes 5450 3600 0    60   ~ 0
+Transmit Data
+Text HLabel 7050 4250 2    60   Input ~ 0
+~CAN_INT
+$Comp
+L ABM3_16MHz Y2
+U 1 1 59EC6579
+P 4100 4100
+F 0 "Y2" H 4100 4250 39  0000 C CNN
+F 1 "ABM3_16MHz" H 4100 3950 39  0000 C CNN
+F 2 "" H 4100 4100 60  0000 C CNN
+F 3 "" H 4100 4100 60  0000 C CNN
+	1    4100 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 4450 4000 4450
+Wire Wire Line
+	4100 4250 4100 4450
+Wire Wire Line
+	4100 3750 4100 3950
+Wire Wire Line
+	4100 3750 4000 3750
+Wire Wire Line
+	3700 3750 3650 3750
+Wire Wire Line
+	3650 3750 3650 4650
+Wire Wire Line
+	3650 4450 3700 4450
+Connection ~ 4500 4650
+Connection ~ 3650 4450
+Wire Wire Line
+	4550 4150 4300 4150
+Wire Wire Line
+	4300 4150 4300 4300
+Wire Wire Line
+	4300 4300 4100 4300
+Connection ~ 4100 4300
+Wire Wire Line
+	4100 3900 4300 3900
+Wire Wire Line
+	4300 3900 4300 4050
+Wire Wire Line
+	4300 4050 4550 4050
+Connection ~ 4100 3900
+$Comp
+L R R2
+U 1 1 59EC9FED
+P 7300 3350
+F 0 "R2" V 7380 3350 50  0000 C CNN
+F 1 "330" V 7300 3350 50  0000 C CNN
+F 2 "" V 7230 3350 50  0001 C CNN
+F 3 "" H 7300 3350 50  0001 C CNN
+	1    7300 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-can-serial-2017 D4
+U 1 1 59ECA031
+P 7700 3350
+F 0 "D4" H 7700 3450 50  0000 C CNN
+F 1 "LED" H 7700 3250 50  0000 C CNN
+F 2 "" H 7700 3350 50  0000 C CNN
+F 3 "" H 7700 3350 50  0000 C CNN
+	1    7700 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR025
+U 1 1 59ECA07C
+P 7950 3350
+F 0 "#PWR025" H 7950 3100 50  0001 C CNN
+F 1 "GND" V 7950 3150 50  0000 C CNN
+F 2 "" H 7950 3350 50  0001 C CNN
+F 3 "" H 7950 3350 50  0001 C CNN
+	1    7950 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7950 3350 7900 3350
+Wire Wire Line
+	7500 3350 7450 3350
+$Comp
+L R R1
+U 1 1 59ECA1F6
+P 7300 3050
+F 0 "R1" V 7380 3050 50  0000 C CNN
+F 1 "330" V 7300 3050 50  0000 C CNN
+F 2 "" V 7230 3050 50  0001 C CNN
+F 3 "" H 7300 3050 50  0001 C CNN
+	1    7300 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-can-serial-2017 D3
+U 1 1 59ECA23E
+P 7700 3050
+F 0 "D3" H 7700 3150 50  0000 C CNN
+F 1 "LED" H 7700 2950 50  0000 C CNN
+F 2 "" H 7700 3050 50  0000 C CNN
+F 3 "" H 7700 3050 50  0000 C CNN
+	1    7700 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR026
+U 1 1 59ECA297
+P 7950 3050
+F 0 "#PWR026" H 7950 2800 50  0001 C CNN
+F 1 "GND" V 7950 2850 50  0000 C CNN
+F 2 "" H 7950 3050 50  0001 C CNN
+F 3 "" H 7950 3050 50  0001 C CNN
+	1    7950 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7950 3050 7900 3050
+Wire Wire Line
+	7450 3050 7500 3050
+Wire Wire Line
+	7150 3050 7150 3250
+Wire Wire Line
+	7150 3250 7000 3250
+Wire Wire Line
+	7000 3350 7150 3350
+Wire Wire Line
+	7050 4250 7000 4250
+Text HLabel 7050 2150 2    60   Output ~ 0
+SCK
+Text HLabel 7050 2250 2    60   Output ~ 0
+MOSI
+Text HLabel 7050 2350 2    60   Input ~ 0
+MISO
+Text HLabel 7050 2050 2    60   Output ~ 0
+~CS
+Wire Wire Line
+	7050 2050 7000 2050
+Wire Wire Line
+	7000 2150 7050 2150
+Wire Wire Line
+	7050 2250 7000 2250
+Wire Wire Line
+	7000 2350 7050 2350
+$Comp
+L +3V3 #PWR027
+U 1 1 59F3D7D4
+P 4450 2150
+F 0 "#PWR027" H 4450 2000 50  0001 C CNN
+F 1 "+3V3" H 4450 2290 50  0000 C CNN
+F 2 "" H 4450 2150 50  0001 C CNN
+F 3 "" H 4450 2150 50  0001 C CNN
+	1    4450 2150
+	0    -1   -1   0   
+$EndComp
+Text HLabel 7000 3450 2    60   Input ~ 0
+RSD
+Text HLabel 7000 3550 2    60   Output ~ 0
+TSD
+$Comp
+L CP1 C7
+U 1 1 59F4D3B9
+P 3850 3750
+F 0 "C7" H 3875 3850 50  0000 L CNN
+F 1 "18uF" H 3875 3650 50  0000 L CNN
+F 2 "" H 3850 3750 50  0001 C CNN
+F 3 "" H 3850 3750 50  0001 C CNN
+	1    3850 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L CP1 C8
+U 1 1 59F4D40F
+P 3850 4450
+F 0 "C8" H 3875 4550 50  0000 L CNN
+F 1 "18uF" H 3875 4350 50  0000 L CNN
+F 2 "" H 3850 4450 50  0001 C CNN
+F 3 "" H 3850 4450 50  0001 C CNN
+	1    3850 4450
+	0    1    1    0   
+$EndComp
+NoConn ~ 4550 2050
+NoConn ~ 4550 2750
+NoConn ~ 4550 2850
+NoConn ~ 4550 2950
+NoConn ~ 4550 3050
+NoConn ~ 4550 3150
+NoConn ~ 7000 4950
+NoConn ~ 7000 4850
+NoConn ~ 7000 4750
+NoConn ~ 7000 4650
+NoConn ~ 7000 4550
+NoConn ~ 7000 4450
+NoConn ~ 7000 4150
+NoConn ~ 7000 3950
+NoConn ~ 7000 3850
+NoConn ~ 7000 3750
+NoConn ~ 7000 3650
+NoConn ~ 7000 3050
+NoConn ~ 7000 2950
+NoConn ~ 7000 2750
+NoConn ~ 7000 2650
+NoConn ~ 7000 2550
+NoConn ~ 7000 2450
+$EndSCHEMATC

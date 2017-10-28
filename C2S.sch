@@ -1,0 +1,260 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:can-serial-2017-cache
+LIBS:solarcar-kicad-components
+LIBS:C2S-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 3350 1850 900  750 
+U 59E84077
+F0 "CAN_Bus" 60
+F1 "CAN_Bus.sch" 60
+F2 "CANH" O L 3350 2000 60 
+F3 "CANL" O L 3350 2100 60 
+F4 "CAN_MISO" O R 4250 2200 60 
+F5 "~CAN_INT" O R 4250 2000 60 
+F6 "CAN_SCK" I R 4250 2400 60 
+F7 "CAN_MOSI" I R 4250 2300 60 
+F8 "~CAN_CS" I R 4250 2100 60 
+$EndSheet
+$Comp
+L CONN_CAN_6pin P1
+U 1 1 59E8ACC2
+P 2450 1950
+F 0 "P1" H 2450 2300 39  0000 C CNN
+F 1 "CONN_CAN_6pin" V 2550 1950 39  0000 C CNN
+F 2 "" H 2450 1950 60  0000 C CNN
+F 3 "" H 2450 1950 60  0000 C CNN
+	1    2450 1950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_CAN_6pin P2
+U 1 1 59E8AD73
+P 2450 2650
+F 0 "P2" H 2450 3000 39  0000 C CNN
+F 1 "CONN_CAN_6pin" V 2550 2650 39  0000 C CNN
+F 2 "" H 2450 2650 60  0000 C CNN
+F 3 "" H 2450 2650 60  0000 C CNN
+	1    2450 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR01
+U 1 1 59E8ADEC
+P 2700 1700
+F 0 "#PWR01" H 2700 1550 50  0001 C CNN
+F 1 "+12V" V 2650 1700 50  0000 C CNN
+F 2 "" H 2700 1700 50  0001 C CNN
+F 3 "" H 2700 1700 50  0001 C CNN
+	1    2700 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L +12V #PWR02
+U 1 1 59E8AE1C
+P 2700 2400
+F 0 "#PWR02" H 2700 2250 50  0001 C CNN
+F 1 "+12V" V 2650 2400 50  0000 C CNN
+F 2 "" H 2700 2400 50  0001 C CNN
+F 3 "" H 2700 2400 50  0001 C CNN
+	1    2700 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 59E8AE45
+P 2700 1800
+F 0 "#PWR03" H 2700 1550 50  0001 C CNN
+F 1 "GND" H 2700 1650 50  0000 C CNN
+F 2 "" H 2700 1800 50  0001 C CNN
+F 3 "" H 2700 1800 50  0001 C CNN
+	1    2700 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 59E8AE75
+P 2700 2200
+F 0 "#PWR04" H 2700 1950 50  0001 C CNN
+F 1 "GND" H 2700 2050 50  0000 C CNN
+F 2 "" H 2700 2200 50  0001 C CNN
+F 3 "" H 2700 2200 50  0001 C CNN
+	1    2700 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 59E8AE9E
+P 2700 2500
+F 0 "#PWR05" H 2700 2250 50  0001 C CNN
+F 1 "GND" H 2700 2350 50  0000 C CNN
+F 2 "" H 2700 2500 50  0001 C CNN
+F 3 "" H 2700 2500 50  0001 C CNN
+	1    2700 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 59E8AEC7
+P 2700 2900
+F 0 "#PWR06" H 2700 2650 50  0001 C CNN
+F 1 "GND" H 2700 2750 50  0000 C CNN
+F 2 "" H 2700 2900 50  0001 C CNN
+F 3 "" H 2700 2900 50  0001 C CNN
+	1    2700 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2700 1700 2650 1700
+Wire Wire Line
+	2650 1800 2700 1800
+Wire Wire Line
+	2700 2200 2650 2200
+Wire Wire Line
+	2650 2400 2700 2400
+Wire Wire Line
+	2700 2500 2650 2500
+Wire Wire Line
+	2650 2900 2700 2900
+Wire Wire Line
+	2650 2800 2900 2800
+Wire Wire Line
+	2900 2800 2900 2100
+Wire Wire Line
+	2650 2100 3350 2100
+Wire Wire Line
+	2650 2000 3350 2000
+Wire Wire Line
+	2950 2000 2950 2700
+Wire Wire Line
+	2950 2700 2650 2700
+Wire Wire Line
+	2650 2600 3000 2600
+Wire Wire Line
+	3000 2600 3000 1900
+Wire Wire Line
+	3000 1900 2650 1900
+Connection ~ 2950 2000
+Connection ~ 2900 2100
+Wire Wire Line
+	4250 2000 6050 2000
+$Sheet
+S 4400 4300 1300 1200
+U 59EC1161
+F0 "Volt_Reg" 60
+F1 "Volt_Reg.sch" 60
+$EndSheet
+Wire Wire Line
+	6050 2100 4250 2100
+Wire Wire Line
+	4250 2200 6050 2200
+Wire Wire Line
+	4250 2300 6050 2300
+Wire Wire Line
+	6050 2400 4250 2400
+Wire Wire Line
+	7250 2250 8000 2250
+Wire Wire Line
+	7250 2150 8000 2150
+$Comp
+L +3V3 #PWR07
+U 1 1 59F403B6
+P 7850 2050
+F 0 "#PWR07" H 7850 1900 50  0001 C CNN
+F 1 "+3V3" H 7850 2190 50  0000 C CNN
+F 2 "" H 7850 2050 50  0001 C CNN
+F 3 "" H 7850 2050 50  0001 C CNN
+	1    7850 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 59F4045A
+P 7850 2350
+F 0 "#PWR08" H 7850 2100 50  0001 C CNN
+F 1 "GND" H 7850 2200 50  0000 C CNN
+F 2 "" H 7850 2350 50  0001 C CNN
+F 3 "" H 7850 2350 50  0001 C CNN
+	1    7850 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 2350 7850 2350
+Wire Wire Line
+	7850 2050 8000 2050
+$Comp
+L Conn_01x04 J1
+U 1 1 59F44742
+P 8200 2150
+F 0 "J1" H 8200 2350 50  0000 C CNN
+F 1 "Conn_01x04" H 8200 1850 50  0000 C CNN
+F 2 "" H 8200 2150 50  0001 C CNN
+F 3 "" H 8200 2150 50  0001 C CNN
+	1    8200 2150
+	1    0    0    -1  
+$EndComp
+Text Notes 7300 7500 0    60   ~ 0
+CAN to Serial
+Text Notes 10550 7650 0    60   ~ 0
+1
+Text Notes 8100 7650 0    60   ~ 0
+10/28/2017
+$Sheet
+S 6050 1900 1200 1450
+U 59E8407A
+F0 "ATmega32U4" 60
+F1 "ATmega32U4.sch" 60
+F2 "MISO" I L 6050 2200 60 
+F3 "RSD" I R 7250 2150 60 
+F4 "TSD" O R 7250 2250 60 
+F5 "~CAN_INT" I L 6050 2000 60 
+F6 "SCK" O L 6050 2400 60 
+F7 "MOSI" O L 6050 2300 60 
+F8 "~CS" O L 6050 2100 60 
+$EndSheet
+$EndSCHEMATC

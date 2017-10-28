@@ -1,0 +1,195 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:can-serial-2017-cache
+LIBS:solarcar-kicad-components
+LIBS:C2S-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R-78E3.3-1.0 U1
+U 1 1 59EC3A27
+P 4350 3650
+F 0 "U1" H 4500 3350 60  0000 C CNN
+F 1 "R-78E3.3-1.0" V 4300 3650 60  0000 C CNN
+F 2 "" H 4350 3400 60  0001 C CNN
+F 3 "" H 4350 3400 60  0001 C CNN
+	1    4350 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 59EC3EE9
+P 4900 3300
+F 0 "C6" H 4925 3400 50  0000 L CNN
+F 1 "10uF" H 4925 3200 50  0000 L CNN
+F 2 "" H 4938 3150 50  0001 C CNN
+F 3 "" H 4900 3300 50  0001 C CNN
+	1    4900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 59EC3F26
+P 4850 4050
+F 0 "C5" H 4875 4150 50  0000 L CNN
+F 1 "10uF" H 4875 3950 50  0000 L CNN
+F 2 "" H 4888 3900 50  0001 C CNN
+F 3 "" H 4850 4050 50  0001 C CNN
+	1    4850 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small D2
+U 1 1 59EC3F65
+P 5550 3500
+F 0 "D2" H 5500 3580 50  0000 L CNN
+F 1 "D_Small" H 5400 3420 50  0000 L CNN
+F 2 "" V 5550 3500 50  0001 C CNN
+F 3 "" V 5550 3500 50  0001 C CNN
+	1    5550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR018
+U 1 1 59EC404A
+P 5700 3500
+F 0 "#PWR018" H 5700 3350 50  0001 C CNN
+F 1 "+12V" H 5700 3640 50  0000 C CNN
+F 2 "" H 5700 3500 50  0001 C CNN
+F 3 "" H 5700 3500 50  0001 C CNN
+	1    5700 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L +3V3 #PWR019
+U 1 1 59EC411B
+P 4950 3800
+F 0 "#PWR019" H 4950 3650 50  0001 C CNN
+F 1 "+3V3" H 4950 3940 50  0000 C CNN
+F 2 "" H 4950 3800 50  0001 C CNN
+F 3 "" H 4950 3800 50  0001 C CNN
+	1    4950 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 59EC414B
+P 4850 4250
+F 0 "#PWR020" H 4850 4000 50  0001 C CNN
+F 1 "GND" H 4850 4100 50  0000 C CNN
+F 2 "" H 4850 4250 50  0001 C CNN
+F 3 "" H 4850 4250 50  0001 C CNN
+	1    4850 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR021
+U 1 1 59EC4172
+P 4900 3100
+F 0 "#PWR021" H 4900 2850 50  0001 C CNN
+F 1 "GND" H 4900 2950 50  0000 C CNN
+F 2 "" H 4900 3100 50  0001 C CNN
+F 3 "" H 4900 3100 50  0001 C CNN
+	1    4900 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 59EC41F0
+P 5250 3050
+F 0 "#PWR022" H 5250 2800 50  0001 C CNN
+F 1 "GND" H 5250 2900 50  0000 C CNN
+F 2 "" H 5250 3050 50  0001 C CNN
+F 3 "" H 5250 3050 50  0001 C CNN
+	1    5250 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR023
+U 1 1 59EC42BC
+P 4850 3650
+F 0 "#PWR023" H 4850 3400 50  0001 C CNN
+F 1 "GND" H 4850 3500 50  0000 C CNN
+F 2 "" H 4850 3650 50  0001 C CNN
+F 3 "" H 4850 3650 50  0001 C CNN
+	1    4850 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4850 3650 4800 3650
+Wire Wire Line
+	4800 3500 5450 3500
+Wire Wire Line
+	4900 3500 4900 3450
+Connection ~ 4900 3500
+Wire Wire Line
+	5650 3500 5700 3500
+Wire Wire Line
+	4900 3100 4900 3150
+Wire Wire Line
+	5250 3400 5250 3500
+Connection ~ 5250 3500
+Wire Wire Line
+	4800 3800 4950 3800
+Wire Wire Line
+	4850 3800 4850 3900
+Connection ~ 4850 3800
+Wire Wire Line
+	4850 4200 4850 4250
+$Comp
+L D_Zener D1
+U 1 1 59F459C1
+P 5250 3250
+F 0 "D1" H 5250 3350 50  0000 C CNN
+F 1 "D_Zener" H 5250 3150 50  0000 C CNN
+F 2 "" H 5250 3250 50  0001 C CNN
+F 3 "" H 5250 3250 50  0001 C CNN
+	1    5250 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 3050 5250 3100
+$EndSCHEMATC
